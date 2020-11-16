@@ -43,7 +43,7 @@
         </SchemaField>
 
         <NestedEditor
-            v-if="editorItem.childList"
+            v-if="showNestedEditor"
             :child-component-list="editorItem.childList"
             :drag-options="dragOptions"
             :form-data="formData"
@@ -82,6 +82,9 @@
         computed: {
             attrs() {
                 return editorItem2SchemaFieldProps(this.editorItem, this.formData);
+            },
+            showNestedEditor() {
+                return this.editorItem.childList && !this.editorItem.componentPack.viewSchema.format;
             }
         },
         beforeDestroy() {

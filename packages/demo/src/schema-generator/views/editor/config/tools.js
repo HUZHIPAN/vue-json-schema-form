@@ -10,7 +10,9 @@ import componentPackSlider from '../viewComponents/Slider';
 
 import componentPackTime from '../viewComponents/Time';
 import componentPackDate from '../viewComponents/Date';
+import componentPackDateRange from '../viewComponents/DateRange';
 import componentPackDateTime from '../viewComponents/DateTime';
+import componentPackDateTimeRange from '../viewComponents/DateTimeRange';
 
 import componentPackObject from '../viewComponents/Object';
 import componentPackArray from '../viewComponents/Array';
@@ -48,6 +50,12 @@ const tools = [
         }, {
             title: '日期时间选择',
             componentPack: componentPackDateTime
+        }, {
+            title: '日期范围',
+            componentPack: componentPackDateRange
+        }, {
+            title: '日期时间范围',
+            componentPack: componentPackDateTimeRange
         }]
     },
     {

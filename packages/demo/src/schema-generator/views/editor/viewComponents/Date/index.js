@@ -31,7 +31,7 @@ export default {
                             ],
                             enumNames: [
                                 '数字时间戳',
-                                'IOS字符串'
+                                'ISO字符串'
                             ]
                         }
                     }

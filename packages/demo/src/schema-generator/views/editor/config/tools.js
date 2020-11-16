@@ -3,10 +3,9 @@
  */
 
 import componentPackInput from '../viewComponents/Input';
-
 import componentPackInputNumber from '../viewComponents/InputNumber';
-
 import componentPackSlider from '../viewComponents/Slider';
+import componentPackSelectBoolean from '../viewComponents/SelectBoolean';
 
 import componentPackTime from '../viewComponents/Time';
 import componentPackDate from '../viewComponents/Date';
@@ -37,6 +36,9 @@ const tools = [
         }, {
             title: '数字（slider）',
             componentPack: componentPackSlider
+        }, {
+            title: '是否选择',
+            componentPack: componentPackSelectBoolean
         }]
     },
     {

@@ -94,7 +94,6 @@
             // 点击只能打开，并且打开状态下只能执行一次
             handleClickView(e) {
                 // 阻止浏览器默认事件
-                e.preventDefault();
                 e.stopPropagation();
                 if (!this.editorItem.isEdit) this.showEditForm();
             },

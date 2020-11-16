@@ -28,7 +28,7 @@ export default {
                             'ui:widget': {
                                 title: '使用组件',
                                 type: 'string',
-                                default: 'el-switch',
+                                const: 'el-switch',
                                 'ui:hidden': true
                             }
                         }
@@ -60,6 +60,7 @@ export default {
                                 title: '使用组件',
                                 type: 'string',
                                 default: 'el-checkbox',
+                                const: 'el-checkbox',
                                 'ui:hidden': true
                             }
                         }
@@ -86,6 +87,7 @@ export default {
                                 title: '使用组件',
                                 type: 'string',
                                 default: 'SelectWidget',
+                                const: 'SelectWidget',
                                 'ui:hidden': true
                             },
                             enumNames: {
@@ -117,6 +119,7 @@ export default {
                             'ui:widget': {
                                 title: '使用组件',
                                 type: 'string',
+                                const: 'RadioWidget',
                                 default: 'RadioWidget',
                                 'ui:hidden': true
                             },

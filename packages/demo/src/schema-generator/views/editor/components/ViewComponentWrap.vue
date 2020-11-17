@@ -104,11 +104,12 @@
                 // 打开时才注册一个关闭事件，关闭弹窗时移除事件
                 this.closeHandle = (event) => {
                     // 点击的自己兄弟view关闭自己
+                    const $el = this.$el;
                     const isChildEle = this.$el.contains(event.target);
                     const parentWrapEle = event.target.closest('.js_viewComponentWrap');
 
                     // 点击非自身的item 关闭自己，或者点击了自己的子item 关闭自己
-                    if ((!isChildEle && parentWrapEle) || (isChildEle && this.$el.contains(parentWrapEle))) {
+                    if ((!isChildEle && parentWrapEle) || (isChildEle && $el !== parentWrapEle && this.$el.contains(parentWrapEle))) {
                         this.hideEditForm();
                     }
                 };

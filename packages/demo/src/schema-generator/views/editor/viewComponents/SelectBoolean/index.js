@@ -16,17 +16,10 @@ export default {
             title: '选项',
             required: [],
             anyOfSelect: {
-                'ui:title': '渲染组件',
-                'ui:enumOptions': [{
-                    label: '选项一',
-                    value: 0
-                }, {
-                    label: '选项二',
-                    value: 1
-                }]
+                'ui:title': '渲染组件'
             },
             anyOf: [{
-                'ui:title': '1el-switch组件',
+                'ui:title': 'el-switch组件',
                 title: 'el-switch组件',
                 type: 'object',
                 'ui:showTitle': true,

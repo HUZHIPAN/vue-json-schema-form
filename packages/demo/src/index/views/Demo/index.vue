@@ -28,13 +28,13 @@
         <el-row :gutter="60">
             <el-col :class="$style.middleBox" :span="16">
                 <el-row :gutter="6">
-                    <el-col :span="12">
+                    <el-col :span="16">
                         <CodeEditor
                             v-model="curSchemaCode"
                             title="Schema"
                         ></CodeEditor>
                     </el-col>
-                    <el-col :span="12">
+                    <el-col :span="8">
                         <CodeEditor
                             v-model="curFormDataCode"
                             title="FormData"
